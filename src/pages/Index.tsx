@@ -124,7 +124,7 @@ const Index = () => {
             </div>
             <div className="flex items-center space-x-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400 fire-glow">{teamStats.rank}</div>
+                <div className="text-3xl font-bold text-white fire-glow">{teamStats.rank}</div>
                 <div className="text-sm text-blue-200/60">World Rank</div>
               </div>
               <div className="text-center">
@@ -159,7 +159,7 @@ const Index = () => {
                   <div className="text-sm text-blue-200/70">Сыграно матчей</div>
                 </div>
                 <div className="text-center p-6 glass-effect rounded-2xl fire-glow">
-                  <div className="text-3xl font-bold text-yellow-400 mb-2">{teamStats.championships}</div>
+                  <div className="text-3xl font-bold text-blue-400 mb-2">{teamStats.championships}</div>
                   <div className="text-sm text-blue-200/70">Чемпионства</div>
                 </div>
                 <div className="text-center p-6 glass-effect rounded-2xl">
@@ -167,7 +167,7 @@ const Index = () => {
                   <div className="text-sm text-blue-200/70">Процент побед</div>
                 </div>
                 <div className="text-center p-6 glass-effect rounded-2xl fire-glow">
-                  <div className="text-3xl font-bold text-purple-400 mb-2">{teamStats.rank}</div>
+                  <div className="text-3xl font-bold text-white mb-2">{teamStats.rank}</div>
                   <div className="text-sm text-blue-200/70">Место в рейтинге</div>
                 </div>
               </div>
@@ -202,7 +202,7 @@ const Index = () => {
                       <div className="text-center">
                         <div className="grid grid-cols-2 gap-2 text-xs">
                           <div className="p-2 glass-effect rounded-xl">
-                            <div className="font-bold text-yellow-400">{player.kda}</div>
+                            <div className="font-bold text-blue-400">{player.kda}</div>
                             <div className="text-blue-200/60">KDA</div>
                           </div>
                           <div className="p-2 glass-effect rounded-xl">
@@ -249,7 +249,7 @@ const Index = () => {
 
                     <div className="grid grid-cols-2 gap-4">
                       <div className="glass-effect p-4 rounded-2xl text-center">
-                        <div className="text-2xl font-bold text-yellow-400">{player.gamesPlayed}</div>
+                        <div className="text-2xl font-bold text-blue-400">{player.gamesPlayed}</div>
                         <div className="text-sm text-blue-200/70">Игр сыграно</div>
                       </div>
                       <div className="glass-effect p-4 rounded-2xl text-center">
@@ -276,7 +276,7 @@ const Index = () => {
                 {recentMatches.map((match, index) => (
                   <div key={index} className="flex items-center justify-between p-6 border-b border-blue-500/20 last:border-b-0 hover:bg-blue-500/10 transition-all duration-300 first:rounded-t-3xl last:rounded-b-3xl lightning-effect">
                     <div className="flex items-center space-x-4">
-                      <div className={`w-4 h-4 rounded-full ${match.result === 'Победа' ? 'bg-green-500 fire-glow' : 'bg-red-500'}`}></div>
+                      <div className={`w-4 h-4 rounded-full ${match.result === 'Победа' ? 'bg-green-500 fire-glow' : 'bg-blue-500'}`}></div>
                       <div>
                         <div className="font-semibold text-blue-300 text-lg">vs {match.opponent}</div>
                         <div className="text-sm text-blue-200/70">{match.tournament}</div>
